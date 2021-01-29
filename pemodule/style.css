@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 40px 60px 0;
+    background: #49379A;
+}
+.header-area{
+    background-image: url(slider.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    
+}
+.header-area::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2f229e;
+    background: -moz-linear-gradient(left,  #2f229e 0%, #a955c7 100%);
+    background: -webkit-linear-gradient(left,  #2f229e 0%,#a955c7 100%);
+    background: linear-gradient(to right,  #2f229e 0%,#a955c7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f229e', endColorstr='#a955c7',GradientType=1 );
+    opacity: .9;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 25px 50px;
+    text-transform: uppercase;
+}
+
+.slider-area h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+.slider-area h1 {
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.border-btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+.gradient-btn{
+    border: none;
+    background: #2f229e;
+    background: -moz-linear-gradient(left,  #2f229e 0%, #a955c7 100%);
+    background: -webkit-linear-gradient(left,  #2f229e 0%,#a955c7 100%);
+    background: linear-gradient(to right,  #2f229e 0%,#a955c7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f229e', endColorstr='#a955c7',GradientType=1 );
+}
+
+.reasons-to-choose-section {
+    background: #fff;
+    padding: 70px 45px;
+    display: flex;
+}
+
+.reasons-to-choose-section-text {
+    line-height: 1.4;
+    font-weight: 400;
+    width: 50%;
+    color: #aaa;
+    margin-right: 30px;
+}
+
+.reasons-to-choose-section-image {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    background-image: url('hills.jpg');
+    background-size: cover;
+    height: auto;
+}
+
+.reasons-to-choose-section-image img {
+    max-width: 100%;
+}
+
+.reasons-to-choose-section-image:after {content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #a955c7;background: -moz-linear-gradient(-45deg,  #a955c7 0%, #2f229e 100%);background: -webkit-linear-gradient(-45deg,  #a955c7 0%,#2f229e 100%);background: linear-gradient(135deg,  #a955c7 0%,#2f229e 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a955c7', endColorstr='#2f229e',GradientType=1 );opacity: .7;}
+
+.reasons-to-choose-section-text h1 {
+    font-weight: 300;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #000;
+    line-height: 1.0;
+}
+.reasons-to-choose-section.section-right{
+    background-image: url(bg-1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+.reasons-to-choose-section.section-right .reasons-to-choose-section-text, .reasons-to-choose-section.section-right .reasons-to-choose-section-text h1 {
+    color: #fff;
+}
