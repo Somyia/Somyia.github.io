@@ -1,0 +1,514 @@
+
+:root{
+    --heading-color: #161616;
+    --link-color : #999;
+    --white-color : #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 60px; 
+    font-size: 15.24px;
+    letter-spacing: 1px;
+    position: relative;
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color : var(--heading-color);
+}
+
+.clear {
+    clear: both;
+}
+
+/*********** header Top Area ************/
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-left h3{
+    font-size: 23px;
+    
+}
+.header-top-right {
+    position: fixed;
+    right: 60px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 6px 12px;
+    background: transparent;
+    transition: .3s;
+    z-index: 9999999;
+}
+
+.header-top-right:hover  {
+    background-color: var(--white-color);
+}
+
+.header-top-right:hover a {
+    color: var(--link-color);
+}
+
+
+.header-top-right h3{ 
+    font-size: 18px;
+    padding: 3px 0;
+}
+/******************************************/
+
+/******** Header Bottom Area *************/
+.header-bottom{
+    text-align: center;
+    padding: 235px 0 160px;
+}
+.header-bottom h2 {
+    font-size: 33px;
+    animation: toptoBottom 1s;
+    position: relative;
+}
+
+@keyframes toptoBottom{
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.header-bottom h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: bottomtoTop 1s;
+    position: relative;
+}
+
+@keyframes bottomtoTop{
+    from{
+        top: 200px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+/*******************************************/
+
+
+/*********** Projects Area ***********/
+.projects-area {
+    padding: 65px 55px;
+}
+
+.project {
+    width: 70%;
+    
+    position: relative;
+    margin-bottom: 140px;
+    transition: .3s;
+}
+.project:hover {
+    transform: scale(0.9);
+}
+
+.project a {
+    font-size: 31px;
+}
+
+.project-1 {
+    float: right;
+    
+}
+
+.project div {
+    position: absolute;
+    right: 15px;
+    top: -20px;
+}
+
+.project-2 div {
+    right: auto;
+    left: 15px;
+}
+
+.project-area-btn {
+    text-align: center;
+}
+
+.border-btn {
+    text-transform: uppercase;
+    border: 1px solid var(--heading-color);
+    padding: 15px 20px;
+    transition: .3s;
+}
+
+.border-btn:hover {
+    color: #fff;
+    background: var(--heading-color);
+}
+/*************************************************/
+
+/************** About Logos Area ***************/
+.about-logos-area {
+    padding: 90px 40px;
+    display: flex;
+}
+.about-area, .logos-area, .works-area {
+    width: 50%;
+    background: var(--heading-color);
+    height: 292px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.about-area h1, .logos-area h1, .works-area h1{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 33px;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.about-area:hover, .logos-area:hover, .works-area:hover {
+    background: var(--white-color);
+   
+}
+
+.about-area:hover h1, .logos-area:hover h1, .works-area:hover h1 {
+    color: var(--heading-color);
+}
+/**********************************************/
+
+/****************footer Area **************/
+.footer-area a{
+    color: var(--link-color);
+    padding-bottom: 15px;
+    display: block;
+    transition: .3s;
+}
+
+.footer-area {
+    padding: 45px 105px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.footer-left a {
+    text-transform: lowercase;
+    margin-top: 15px;
+    
+}
+
+.footer {
+    width: 33.33333%;
+    float: left;
+    text-align: left;
+}
+
+.footer-area a:hover, .page-active{
+    color: var(--heading-color);
+}
+
+/*********************************************/
+/*************** PoPup Menu Area *************/
+
+.popup-menu-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--heading-color);
+    height: 100vh;
+    text-align: center;
+    padding-top: 15%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-out;
+}
+.popup-menu-area.active{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.popup-menu-inner-area h1 {
+    font-size: 36px;
+    margin-bottom: 20px; 
+    color: var(--link-color) !important;
+
+}
+
+.popup-menu-inner-area, .popup-menu-inner-area a {
+    color: var(--white-color);
+}
+
+.popup-menu-inner-area a {
+    font-size: 19px;
+    padding: 10px;
+    display: block;
+    transition: .3s;
+}
+
+.popup-menu-inner-area a:hover {
+    color: var(--link-color);
+}
+
+.popup-menu-inner-area a img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+/*****************************************/
+/*************** About Page ****************/
+/**************** slider Area ************/
+.slider {
+    padding: 30px 0;
+    
+}
+.slider-area {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    margin: 25px 0;
+    overflow: hidden;
+    animation: sliderAnimation 2s ease-in;
+}
+@keyframes sliderAnimation{
+    from{
+        margin-top: 120px;
+    }
+    to{
+        margin-top: 25px ;
+    }
+}
+.single-slider p{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.single-slider {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-dots {
+    width: 100%;
+   
+    text-align: center;
+}
+
+.single-slider img {
+    height: 100%;
+}
+
+.slider-dots a {
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background: #d5d5d5;
+   display: inline-block;
+}
+.slider-dots a.active{
+    background-color: var(--heading-color);
+}
+/*******************************************/
+/************* About Us Area ****************/
+.about-us-area {
+    padding: 65px 35px 65px 25px;
+    margin-left: -30px;
+    margin-right: 0;
+}
+
+.about-us-text, .about-us-image, .our-standards-area, .why-we-do-it-area {
+    width: 47%;
+    float: left;
+    padding: 0 15px;
+}
+
+.about-us-text h3, .our-standards-area h3, .why-we-do-it-area h3,
+.what-we-do-area h3, .career-area h3, .start-a-project-area h3 {
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+.about-us-text h3{
+    margin-bottom: 0;
+}
+.about-us-text p, .our-standards-area p, .why-we-do-it-area p,
+.what-we-do-area li, .career-area a, .start-a-project-area a  {
+    color: #545454;
+    font-size: 16.51px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+.about-us-text p {
+    padding: 15%;
+}
+.about-us-image {
+    height: 385px;
+}
+
+.about-us-image img {
+    height: 100%;
+}
+/****************************************/
+/********** About Us bottom **********/
+.about-us-bottom {
+    padding: 135px 0;
+}
+.our-standards-area p, .why-we-do-it-area p, .our-standards-area div {
+    padding-left: 15px;
+}
+/***************************************/
+/********* About Photo ***************/
+.about-photo {
+    padding: 145px 25px 0;
+    height: 570px;
+}
+/***************** About Us last ****************/
+.about-us-last-area {
+    padding: 135px 25px;
+}
+
+.about-us-last-area div {
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+
+/**************** Blog Page **********/
+.post, .projects {
+    width: 48%;
+    float: left;
+    margin: 0 10px;
+    margin-bottom: 90px;
+}
+
+.post-area, .main-project-area{
+   
+    padding: 100px 25px 0;
+   
+}
+
+.post-image, .project-image {
+    height: 365px;
+    transition: .3s;
+}
+.post-image:hover, .project-image:hover{
+    transform: scale(0.9);
+}
+.post-text h2, .project-text h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.post-features span, .project-features span {
+    color: var(--link-color);
+    font-style: italic;
+    font-weight: 300;
+    position: relative;
+    margin-right: 8px;
+    letter-spacing: 1px;
+}
+
+.post-features span:nth-child(1):before,
+ .post-features span:nth-child(2):before,
+ .project-features span:nth-child(1):before,
+ .project-features span:nth-child(2):before {
+    content: '.';
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    font-size: 22px;
+}
+
+.post-text, .project-text {
+    margin: 15px 0 15px 23px;
+}
+
+/******* Works page **********/
+.project-features span{
+    font-style: normal;
+    color: var(--heading-color) !important;
+    font-weight: 400;
+}
+.about-project{
+    font-style: italic;
+    color: var(--link-color);
+    font-weight: 300;
+    margin-top: 10px;
+}
+/************* logo collection ************/
+.logo-collection-row{
+    padding: 0 10px;
+}
+.single-logo{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 32.4%;
+    float: left;
+    transition: .3s;
+}
+.single-logo:hover{
+    transform: scale(.9);
+}
+
+.logo-collection-area .project-area-btn {
+    margin-top: 130px;
+}
+.logo-collection-area{
+    padding: 100px 25px 70px;
+}
+
+/********* single projects *******/
+.photo-groups{
+    padding: 110px 25px;
+}
+.photo-group, .photo-group2{
+    width: 31.4%;
+    float: left;
+    transition: .3s;
+    margin: 10px 10px 10px 15px;
+}
+.photo-group:hover, .photo-group2:hover{
+    transform: scale(.9);
+
+}
+.photo-group2{
+    width: 47.4%;
+    margin:15px;
+}
+.work-photo{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 25px 25px;
+}
+.single-work-btn {
+    padding: 70px 0 110px;
+}

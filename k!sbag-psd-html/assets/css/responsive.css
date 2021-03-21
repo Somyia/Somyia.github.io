@@ -1,0 +1,318 @@
+@media screen and (min-width:1171px){
+
+}
+@media screen and (min-width:769px) and (max-width:1170px){
+    
+}
+@media screen and (max-width:768px){
+    body {
+        padding: 35px 10px;
+        font-size: 14px;
+        
+    }
+    /******* homepage ************/   
+    .header-top-left h3 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .header-top-right {
+        right: 20px;
+        top: 30px;
+    }
+    .header-top-right h3 {
+        font-size: 17px;
+        padding: 0px 0;
+    }
+    .header-bottom {
+        padding: 44px 0 30px;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .header-bottom h2 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .header-bottom h5 {
+        font-size: 17px;
+        margin-top: 5px;
+        font-weight: 400;
+    }
+    .projects-area {
+        padding: 30px 0;
+    }
+    .project {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .project div {
+        top: -15px;
+    }
+    .project a {
+        font-size: 23px;
+    }
+    .about-logos-area {
+        padding: 70px 0;
+    }
+    .about-area, .logos-area, .works-area {
+        height: 100px;
+    }
+    .about-area h1, .logos-area h1, .works-area h1 {
+        font-size: 13px;
+        letter-spacing: 6px;
+    }
+    .footer-area {
+        padding: 10px 0;
+        
+    }
+    .footer.footer-left, .about-us-last-area .what-we-do-area {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .footer {
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    /*********** About Page ***********/
+    .slider-area {
+        height: 400px;
+    }
+    .slider-dots a {
+        margin: 0 2px;
+        width: 10px;
+        height: 10px;
+    }
+    .about-us-area {
+        padding: 33px 0;
+        margin-left: 0;
+    }
+    .about-us-text, .about-us-image, .our-standards-area, .why-we-do-it-area {
+        width: 100%;
+        padding: 0;
+    }
+    .about-us-text, .our-standards-area, .why-we-do-it-area  {
+        margin-bottom: 50px;
+        width: 96%;
+        padding: 0 25px;
+    }
+    
+    .about-us-text p {
+        padding: 3% 0;
+    }
+    .about-us-text p, .our-standards-area p, .why-we-do-it-area p, .what-we-do-area li, .career-area a, .start-a-project-area a {
+        
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .about-us-text h3, .our-standards-area h3, .why-we-do-it-area h3, .what-we-do-area h3, .career-area h3, .start-a-project-area h3 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .our-standards-area p, .why-we-do-it-area p {
+        padding-left: 0;
+    }
+    .our-standards-area {
+        margin-bottom: 110px;
+    }
+    .about-photo {
+        padding: 45px 0 0;
+        height: 450px;
+    }
+    .career-area h3, .start-a-project-area h3 {
+        margin-bottom: 15px;
+    }
+    .what-we-do-area {
+        margin-bottom: 100px;
+    }
+    .about-us-last-area {
+        padding: 75px 0;
+    }
+    .about-us-last-area div {
+        width: 50%;
+    }
+
+    /******** PopUp Page ************/
+    .popup-menu-inner-area h1 {
+        font-size: 26px;
+
+    }
+    .popup-menu-inner-area a {
+        font-size: 17px;
+        padding: 7px;
+    }
+
+    /****** Blog Area **********/
+    .post-area, .main-project-area {
+        padding: 24px 0 0;
+    }
+    .post, .projects {
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-bottom: 90px;
+    }
+
+    .post-text h2, .project-text h2 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    /******* logo collection Area *********/
+    .logo-collection-area {
+        padding: 30px 0;
+    }
+    .single-logo {
+        width: 48.6%;
+    }
+    
+    .logo-collection-area .project-area-btn {
+        margin-top: 80px;
+    }
+    .logo-collection-row{
+        
+        padding: 0;
+    }
+
+    /********** single project **************/
+    .photo-group, .photo-group2{
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    .photo-groups {
+        padding: 0;
+    }
+    .work-photo{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+@media all and (max-width:510px){
+    body {
+        padding: 25px 0 0 ;
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+
+    /******* homepage area **********/
+    .header-top-left h3 {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+    .header-top-right {
+        top: 19px;
+    }
+    .header-top-right h3 {
+        font-size: 15px;
+    }
+    .header-bottom {
+        padding: 35px 0 0;
+        width: 50%;
+    }
+    .header-bottom h2 {
+        font-size: 21px;
+    }
+    .header-bottom h5 {
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 0;
+    }
+    .projects-area {
+        padding: 20px 0;
+    }
+    .project {
+        margin-bottom: 70px;
+    }
+    .project div {
+        top: -12px;
+    }
+    .project a {
+        font-size: 20px;
+    }
+    .border-btn {
+        padding: 10px 20px;
+    }
+    .about-logos-area {
+        padding: 90px 0;
+    }
+    .about-area, .logos-area, .works-area{
+        height: 100px;
+    }
+
+    /******* About Page ***********/
+    .slider {
+        padding: 30px 0 0;
+    }
+    .slider-area {
+        height: 240px;
+        margin: 25px 0 10px;
+    }
+    .slider-dots a {
+        margin: 0 1px;
+        width: 8px;
+        height: 8px;
+    }
+    .about-us-text h3, .our-standards-area h3, .why-we-do-it-area h3, .what-we-do-area h3, .career-area h3, .start-a-project-area h3 {
+        font-size: 19px;
+        margin-bottom: 5px;
+    }
+    .about-us-area {
+        padding: 40px 0;
+    }
+    .about-us-text, .our-standards-area, .why-we-do-it-area {
+        width: 95%;
+        padding: 0 13px;
+    }
+    .about-us-text p, .our-standards-area p, .why-we-do-it-area p, .what-we-do-area li, .career-area a, .start-a-project-area a {
+        font-size: 12px;
+        
+    }
+    .about-us-text {
+        margin-bottom: 75px;
+    }
+    .about-us-bottom {
+        padding: 50px 0;
+    }
+    .our-standards-area {
+        margin-bottom: 70px;
+    }
+    .about-photo {
+        padding: 28px 0;
+        height: 276px;
+    }
+    .about-us-last-area {
+        padding: 50px 0;
+    }
+    .about-area h1, .logos-area h1 {
+        letter-spacing: 4px;
+    }
+    
+    /********** BLog Page ************/
+    .post-area, .main-project-area {
+        padding: 55px 0 0;
+    }
+    .post-text, .project-text {
+        margin: 15px 0 15px 35px;
+    }
+    .post-row:last-child .post:last-child, .project-row:last-child .projects:last-child{
+        margin-bottom: 10px;
+    }
+
+    /*********** logo collection ***********/
+    .logo-collection-area {
+        padding: 30px 0 0px;
+    }
+    .single-logo {
+        margin: 5px;
+        width: 48%;
+    }
+    .logo-collection-area .project-area-btn {
+        margin-top: 60px;
+    }
+    .single-work-btn {
+        padding: 30px 0 70px;
+    }
+}
