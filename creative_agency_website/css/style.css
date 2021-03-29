@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --primary-color: #f60f20;
+  --secondary-color: #1b206e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    line-height: 1.7;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+p {
+    margin: 20px 0 10px;
+    font-size: 1.1rem;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 10;
+}
+.toggle-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--primary-color) url(../img/menu.png);
+    width: 60px;
+    height: 60px;
+    z-index: 20;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.toggle-menu.active{
+    background: var(--primary-color) url(../img/close.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 14;
+}
+.navigation.active{
+    left: 0;
+}
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    text-align: center;
+    position: relative;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #111;
+    transition: .2s;
+}
+
+.navigation ul li a:hover {
+    color: red;
+}
+
+.navigation .social-links {
+    position: absolute;
+    left: 30px;
+    transform: scale(.7);
+}
+
+
+.navigation .mail-link {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    transform: scale(.7);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
+    margin-top: 40px;
+}
+section.home{
+    flex-direction: row;
+    margin-top: 0;
+}
+.home-image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 110%;
+}
+.home-content {
+    max-width: 600px;
+    z-index: 10;
+    position: relative;
+}
+.btn {
+    text-decoration: none;
+    background: var(--primary-color);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: scale(.94);
+}
+
+/********* SERVICE PAGE *************/
+.services {
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.services .service .service-icon img {
+    max-width: 100px;
+}
+
+.services .service {
+    padding: 23px;
+    transition: .2s;
+}
+
+.services .service:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.services .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+/*********** WORKS PAGE ******************/
+.portfolio {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .single-item {
+    width: 275px;
+    height: 275px;
+    position: relative;
+    margin: 5px;
+}
+
+.portfolio .single-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio .single-item .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    opacity: 0;
+}
+
+.portfolio .single-item .action a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.portfolio .single-item:hover .action {
+    opacity: 1;
+}
+
+/************** CONTACT PAGE ***************/
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    margin: 50px;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 60px 40px 30px;
+    width: calc(100% - 400px);
+    position: relative;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: flex;
+}
+
+.contact-form .row input, .contact-form .row textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    resize: none;
+    color: #111;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-form .row .input50 {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.contact-form .row .input100 {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.contact-form .row textarea {
+    height: 150px;
+}
+
+.contact-form .row input[type="submit"] {
+    background: var(--secondary-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+}
+.contact-info {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 60px 40px 30px;
+}
+
+.contact-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-info .info-box img {
+    width: 20px;
+    margin-right: 40px;
+}
+
+.contact-info .info-box .info {
+    margin-top: -3px;
+}
+
+.contact-info .info-box .info h4 {
+    color: var(--secondary-color);
+}
+
+.contact-info .info-box .info p {
+    color: #111;
+    margin: 5px 0;
+}
+
+.contact-info .info-box .info a {
+    color: #111;
+    display: block;
+}
+/************ MEDIA QUERY **************/
+@media screen and (max-width: 1068px){
+    .home-image{
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .logo {
+        top: 10px;
+        left: 40px;
+        font-size: 1.1rem;
+    }
+    section {
+        padding: 100px 30px;
+    }
+    .home-content {
+        max-width: 100%;
+    }
+    .navigation ul li a {
+        font-size: 1.4rem;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 30px 30px 20px;
+    }
+    .contact-info{
+        width: 100%;
+        padding: 30px 30px 20px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px){
+    .services {
+        grid-template-columns: 1fr;
+    }
+    .contact-form .row{
+        flex-direction: column;
+    }
+    .contact-form .row .input50, .contact-form .row .input100 {
+        width: 100%;
+        margin: 0;
+    }
+}
+
